@@ -1,6 +1,4 @@
-<?php
-$fd = fopen("hello.txt", 'w') or die("не удалось создать файл");
-$str = "Привет мир";
-fwrite($fd, $str);
-fclose($fd);
+<?php $filed = "hello.txt";
+$rez = "Записано в файлик";
+file_put_contents($filed, $rez);
 ?>
